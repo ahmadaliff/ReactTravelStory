@@ -3,12 +3,17 @@ import {
   DELETE_POST_BOOKMARK,
   GET_ALL_POST_BOOKMARK,
   SET_ALL_POST_BOOKMARK,
+  SET_POST_BOOKMARK,
 } from "./constants";
 
 export const getAllPostBookmark = (id) => ({ type: GET_ALL_POST_BOOKMARK, id });
 export const setAllPostBookmark = (posts) => ({
   type: SET_ALL_POST_BOOKMARK,
   posts,
+});
+export const setPostBookmark = (post) => ({
+  type: SET_POST_BOOKMARK,
+  post,
 });
 export const addToBookmark = (data, id) => ({
   type: ADD_POST_BOOKMARK,

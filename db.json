@@ -55,40 +55,5 @@
       "id": 2
     }
   ],
-  "bookmarks": [
-    {
-      "title": "Second Post",
-      "imageUrl": "https://source.unsplash.com/500x400/?mountain",
-      "shortDescription": "This is a short description of the second post.",
-      "description": "This is the detailed long description of the second post.",
-      "userId": 2,
-      "author": "Jane Smith",
-      "date": "2023-11-07T14:30:00",
-      "postId": 2,
-      "id": 2
-    },
-    {
-      "title": "First Post",
-      "imageUrl": "https://source.unsplash.com/500x400/?landscape",
-      "shortDescription": "This is a short description of the first post.",
-      "description": "This is the detailed  description of the first post.",
-      "userId": 1,
-      "author": "John Doe",
-      "date": "2023-11-06T12:00:00",
-      "postId": 1,
-      "id": 3
-    },
-    {
-      "bookmarkUserId": 1,
-      "title": "First Post",
-      "imageUrl": "https://source.unsplash.com/500x400/?landscape",
-      "shortDescription": "This is a short description of the first post.",
-      "description": "This is the detailed  description of the first post.",
-      "userId": 1,
-      "author": "John Doe",
-      "date": "2023-11-06T12:00:00",
-      "postId": 1,
-      "id": 4
-    }
-  ]
+  "bookmarks": []
 }

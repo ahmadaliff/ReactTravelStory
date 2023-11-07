@@ -5,12 +5,12 @@ const AlertComp = ({ msg }) => {
   return (
     <div className={Style.AlertComp}>
       {msg?.succ?.map((val, key) => (
-        <Alert severity="success" key={key}>
+        <Alert severity="success" variant="filled" key={key}>
           {val}
         </Alert>
       ))}
       {msg?.err?.map((val, key) => (
-        <Alert severity="error" key={key}>
+        <Alert severity="error" variant="filled" key={key}>
           {val}
         </Alert>
       ))}

@@ -10,7 +10,7 @@ import {
   getAllPostBookmarkByid,
   getAllPostBookmarks,
 } from "../../domain/Api";
-import { setAllPostBookmark } from "./actions";
+import { setAllPostBookmark, setPostBookmark } from "./actions";
 
 export function* doGetPostBookmark(id) {
   try {
@@ -42,7 +42,8 @@ export function* doAddPostBookmark(data) {
           val.postId === dataWithBookmarkUser.postId
       ).length > 0
     ) {
-      yield call(addPostBookmark, dataWithBookmarkUser);
+      const response = yield call(addPostBookmark, dataWithBookmarkUser);
+      yield put(setPostBookmark(response));
     }
   } catch (error) {
     console.log(error);
