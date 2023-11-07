@@ -1,0 +1,45 @@
+@import "../../styles/base.scss";
+.main {
+  @include displayFlex;
+  min-height: 100svh;
+  width: 100vw;
+  background-color: $primary-bg-color;
+  * {
+    font-family: $secondary-font;
+  }
+  .LoginCard {
+    @include displayFlex(column);
+    gap: 1rem;
+    width: 416px;
+    height: 516px;
+    padding: 1.5rem;
+    h3 {
+      font-size: 36px;
+      font-weight: 700;
+    }
+    .Form {
+      @include displayFlex(column, center, start);
+      width: 100%;
+      gap: 0.75rem;
+      .loginButton {
+        color: white;
+        font-weight: 700;
+        text-transform: capitalize;
+        width: 10rem;
+        width: 100%;
+      }
+      .FormLabel {
+        font-weight: 700;
+      }
+    }
+    .dontAccount {
+      font-size: 0.75rem;
+      color: #b1b1b1;
+      a {
+        color: #b1b1b1;
+        font-weight: 700;
+        text-decoration: none;
+      }
+    }
+  }
+}

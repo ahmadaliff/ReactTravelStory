@@ -1,0 +1,46 @@
+@import "../../styles/base.scss";
+.main {
+  display: grid;
+  margin: 0;
+  background-color: $primary-bg-color;
+  min-height: 100vh;
+  width: 100%;
+  padding: 2rem;
+  padding-top: 8rem;
+  gap: 2rem;
+  .headerDetail {
+    @include displayFlex(row, space-between, start);
+    width: 100%;
+    p {
+      font-family: $secondary-font;
+      font-weight: 400;
+      font-size: 24px;
+      font-style: italic;
+    }
+    .rigthHeader {
+      display: grid;
+      gap: 1rem;
+      h2,
+      p {
+        font-size: 48px;
+        font-family: $primary-font;
+        font-weight: 100;
+        font-style: italic;
+      }
+      p {
+        font-size: 24px;
+        color: #3b97d3;
+      }
+    }
+  }
+  .imgDetailWrap {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    .imgDetail {
+      width: 100%;
+      height: 691px;
+      object-fit: cover;
+    }
+  }
+}

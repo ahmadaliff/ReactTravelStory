@@ -1,0 +1,58 @@
+@import "../../styles/base.scss";
+.CardWrap {
+  width: 300px;
+  height: 362px;
+  position: relative;
+  .bookmarkButton {
+    position: absolute;
+    @include displayFlex;
+    top: 0.25rem;
+    right: 0.25rem;
+    border-radius: 50%;
+    padding: 0.25rem;
+    background-color: white;
+    svg {
+      color: #3b97d3;
+    }
+  }
+  .bookmarkButton:hover {
+    transform: scale(1.1, 1.1);
+  }
+  .CardImg {
+    height: 180px;
+    object-fit: cover;
+  }
+  .CardContent {
+    * {
+      font-family: $secondary-font;
+    }
+    .dateAuthor {
+      color: #bfbfbf;
+      padding: 0.25rem 0 1.25rem 0;
+    }
+    h3,
+    p {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    h3 {
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .shortDescription {
+      white-space: wrap;
+      display: -webkit-box;
+      height: 75px;
+      font-weight: 400;
+      font-size: 12px;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+    }
+  }
+}
+.CardWrap:hover {
+  cursor: pointer;
+  transform: scale(1.025, 1.025);
+  border: 1px solid gray;
+}

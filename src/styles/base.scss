@@ -1,0 +1,31 @@
+@import "./color.scss";
+@import "./mixin-component.scss";
+@import "./imageSize.scss";
+@import "./fontStyle.scss";
+@import "./media.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $primary-font;
+  scroll-behavior: smooth;
+}
+
+.CardGrid {
+  display: grid;
+  padding: 5rem 2rem 5rem 2rem;
+  grid-template-columns: auto auto auto auto;
+  @include medium {
+    grid-template-columns: auto auto auto;
+  }
+  @include small {
+    grid-template-columns: auto auto;
+    padding: 2.5rem 1rem 2.5rem 1rem;
+  }
+  @include xsmall {
+    grid-template-columns: auto;
+    padding: 2.5rem 0.5rem 2.5rem 0.5rem;
+  }
+  gap: 2rem;
+  place-items: center;
+}
